@@ -1,8 +1,9 @@
 import React from 'react';
+import PageCards from "../pagecards/PageCards";
 
 const Home = () => (
     <div>
-        Home page
+        <PageCards />
     </div>
   )
 
