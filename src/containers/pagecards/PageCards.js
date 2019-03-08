@@ -1,6 +1,6 @@
 import React from 'react';
-import { Card, CardTitle, CardGroup,
- CardSubtitle, CardBody } from 'reactstrap';
+import { Link } from 'react-router-dom';
+import { Card, CardTitle, CardGroup, CardBody } from 'reactstrap';
 import "./PageCards.scss";
 
 
@@ -10,28 +10,41 @@ const PageCards = (props) => {
     <CardGroup>
       <Card>
         <CardBody >
-          <CardTitle>Resume</CardTitle>
-          <CardSubtitle>Card subtitle</CardSubtitle>
+          <Link to='/resume'>
+            <CardTitle>
+            <i className="fa fa-pencil-alt"
+                     style={{
+                      cursor: 'pointer',
+                      color: '#fff'
+                     }}
+                  ><br />
+                  <span>Resume</span>
+              </i>  
+            </CardTitle>
+          </Link>          
         </CardBody>
       </Card>
       <Card>
         <CardBody>
-          <CardTitle>Porfolio</CardTitle>
-          <CardSubtitle>Card subtitle</CardSubtitle>
+          <Link to='/portfolio'>
+            <CardTitle>Porfolio</CardTitle>
+          </Link>
         </CardBody>
       </Card>
     </CardGroup>
         <CardGroup>
         <Card>
           <CardBody>
-            <CardTitle>Workflow</CardTitle>
-            <CardSubtitle>Card subtitle</CardSubtitle>
+            <Link to='/workflow'>
+              <CardTitle>Workflow</CardTitle>
+            </Link>
           </CardBody>
         </Card>
         <Card>
           <CardBody>
-            <CardTitle>Contacts</CardTitle>
-            <CardSubtitle>Card subtitle</CardSubtitle>
+            <Link to='/contacts'>
+              <CardTitle>Contacts</CardTitle>
+            </Link>
           </CardBody>
         </Card>
       </CardGroup>
