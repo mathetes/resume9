@@ -15,14 +15,7 @@ import { Card, CardTitle, CardGroup,
                             </Card>
                         </Col>
                     </Row><br />
-                    <Row>
-                        <Col sm="12">
-                            <Card body  className="card-info">
-                            <CardTitle>Special Title Treatment</CardTitle>
-                            <CardText>With supporting text below as a natural lead-in to additional content.</CardText>
-                            </Card>
-                        </Col>
-                    </Row><br />
+                    <br />
                 </CardBody>
             </Card>
         </CardGroup>
