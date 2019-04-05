@@ -40,7 +40,41 @@ const Contacts = () => (
                                 <Col sm="6">
                                     <Card body  className="card-info">
                                     <CardTitle className="contact-title">Соц.сети</CardTitle>
-                                    <CardText  className="contact-link"></CardText>
+                                    <CardText  className="contact-link">
+                                    <div className="contact_box">
+                                        <div className="contacts_icon icon-basic-geolocalize-05"></div>
+                                        <i className="fa fa-map-marker faicon"></i>
+                                        <h3>Адрес:</h3>
+                                        <p>Россия, Новосибирская область, г.Искитим</p>
+                                    </div>
+                                    <div className="contact_box">
+                                        <div className="contacts_icon icon-basic-mail-open-text"></div>
+                                        <i className="fa fa-envelope faicon"></i>
+                                        <h3>Email:</h3>
+                                        <p>nsk.roman@gmail.com</p>
+                                    </div>
+                                    <div className="contact_box">
+                                        <i className="fa fa-vk faicon"></i>
+                                        <h3>ВКонтакте:</h3>
+                                        <p><Link to="http://vk.com/ayapergenov" target="_blank">vk.com/ayapergenov</Link></p>
+                                    </div>
+                                    <div className="contact_box">
+                                        <div className="contacts_icon icon-basic-webpage-img-txt"></div>
+                                        <i className="fa fa-adress-card-0 faicon"></i>
+                                        <h3>Веб-сайт:</h3>
+                                        <p><a href="//webexcel.ru" target="_blank">webexcel.ru</a></p>
+                                    </div>
+                                    <div className="contact_box">
+                                        <i className="fa fa-skype faicon"></i>
+                                        <h3>Skype:</h3>
+                                        <p>nskhelper</p>
+                                    </div>
+                                    <div className="contact_box">
+                                        <i className="fa fa-facebook faicon"></i>
+                                        <h3>Facebook:</h3>
+                                        <p><Link to="https://www.facebook.com/ayapergenov" target="_blank">facebook.com/<br />Роман Аяпергенов</Link></p>
+                                    </div>
+                                    </CardText>
                                     </Card>
                                 </Col>
                             </Row><br />
