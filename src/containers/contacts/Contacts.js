@@ -15,7 +15,7 @@ const Contacts = () => (
                     <Card>
                         <CardBody >
                             <Row>
-                                <Col sm="6">
+                                <Col sm="12">
                                     <Card body className="card-info">
                                         <CardTitle className="contact-title">Телефон</CardTitle>
                                         <CardText>
@@ -37,7 +37,7 @@ const Contacts = () => (
                                 </Col>
                             </Row><br />
                             <Row>
-                                <Col sm="6">
+                                <Col sm="12">
                                     <Card body  className="card-info">
                                     <CardTitle className="contact-title">Соц.сети</CardTitle>
                                     <CardText  className="contact-link">
@@ -87,7 +87,7 @@ const Contacts = () => (
                 <a className="btn-floating btn-lg btn-ins" type="button" role="button"><i className="fab fa-instagram"></i></a>
                 <a className="btn-floating btn-lg btn-vk" type="button" role="button"><i className="fab fa-vk"></i></a>
                 <a className="btn-floating btn-lg btn-git" type="button" role="button"><i className="fab fa-github"></i></a>
-<a className="btn-floating btn-lg btn-email" type="button" role="button"><i className="fas fa-envelope"></i></a>*/}
+                <a className="btn-floating btn-lg btn-email" type="button" role="button"><i className="fas fa-envelope"></i></a>*/}
             </CardBody>
             </Card>
         </CardGroup>
