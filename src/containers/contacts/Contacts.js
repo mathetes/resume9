@@ -56,13 +56,13 @@ const Contacts = () => (
                                     <div className="contact_box">
                                         <i className="fa fa-vk faicon"></i>
                                         <h3>ВКонтакте:</h3>
-                                        <p><Link to="http://vk.com/ayapergenov" target="_blank">vk.com/ayapergenov</Link></p>
+                                        <p><Link to="http://vk.com/ayapergenov">vk.com/ayapergenov</Link></p>
                                     </div>
                                     <div className="contact_box">
                                         <div className="contacts_icon icon-basic-webpage-img-txt"></div>
                                         <i className="fa fa-adress-card-0 faicon"></i>
                                         <h3>Веб-сайт:</h3>
-                                        <p><a href="//webexcel.ru" target="_blank">webexcel.ru</a></p>
+                                        <p><a href="//webexcel.ru">webexcel.ru</a></p>
                                     </div>
                                     <div className="contact_box">
                                         <i className="fa fa-skype faicon"></i>
@@ -72,7 +72,7 @@ const Contacts = () => (
                                     <div className="contact_box">
                                         <i className="fa fa-facebook faicon"></i>
                                         <h3>Facebook:</h3>
-                                        <p><Link to="https://www.facebook.com/ayapergenov" target="_blank">facebook.com/<br />Роман Аяпергенов</Link></p>
+                                        <p><Link to="https://www.facebook.com/ayapergenov">facebook.com/<br />Роман Аяпергенов</Link></p>
                                     </div>
                                     </CardText>
                                     </Card>
