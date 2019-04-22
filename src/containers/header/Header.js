@@ -2,13 +2,28 @@ import React from 'react';
 import './Header.scss';
 import { Link } from 'react-router-dom';
 
-const Header = () => (
+
+
+const Header = (props) => {
+    const {
+        name,
+        position
+    } = props;
+    return(
     <div className="block-header">
         <Link className='App-link' to='/'>
-            <h1>Я - Роман Аяпергенов<br />
-            React Developer</h1>
+            <h1>Я - {name} <br />
+            {position}
+            </h1>
         </Link>
-    </div>
-  )
+    </div>);
+  }
+  
+
+  Header.defaultProps = {
+    name: "Роман Аяпергенов",
+    position: "React Developer"
+    };
 
 export default Header;
+  

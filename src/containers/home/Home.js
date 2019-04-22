@@ -2,122 +2,58 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Card, CardTitle, CardGroup, CardBody } from 'reactstrap';
 import "./Home.scss";
+import items from './Homeprops';
+
+
+function Item({ item }) {
+    return (
+    <CardBody
+          style={{
+          display:"table-cell",
+          verticalAlign:"middle"
+          }}
+        >
+        <Link to='/{item.anchor}'>
+            <CardTitle>
+                <i className="fas fa-address-card"
+                        style={{
+                        cursor: 'pointer',
+                        color: '#fff',
+                        fontSize: '2em'
+                        }}
+                    ><br />
+                    <span>{item.heading}</span>
+                </i>  
+            </CardTitle>
+        </Link>     
+    </CardBody>
+    )
+}
+
+class ItemList extends React.Component {
+    render() {
+        const articleElements = this.props.items.map(item => 
+        <Card
+            style = {{
+              display:"table",
+              width: "46%"
+            }}
+        >
+            <Item item = {item}/>
+        </Card>
+        )
+        return (
+            {articleElements}   
+        )
+    }
+}
+
 
 const Home = (props) => {
     return (
-
-    <>
     <CardGroup>
-    <Card
-          style = {{
-            display:"table",
-            width: "46%"
-          }}
-        >
-          <CardBody
-            style={{
-            display:"table-cell",
-            verticalAlign:"middle"
-            }}
-          >
-          <Link to='/resume'>
-            <CardTitle>
-            <i className="fas fa-address-card"
-                     style={{
-                      cursor: 'pointer',
-                      color: '#fff',
-                      fontSize: '2em'
-                     }}
-                  ><br />
-                  <span>Резюме</span>
-              </i>  
-            </CardTitle>
-          </Link>          
-        </CardBody>
-      </Card>
-      <Card
-          style = {{
-            display:"table",
-            width: "46%"
-          }}
-        >
-          <CardBody
-            style={{
-            display:"table-cell",
-            verticalAlign:"middle"
-            }}
-          >
-          <Link to='/portfolio'>
-          <CardTitle>
-            <i className="fas fa-code"
-                style={{
-                cursor: 'pointer',
-                color: '#fff',
-                fontSize: '2em'
-                }}
-            ><br />
-            <span>Портфолио</span>
-            </i> 
-          </CardTitle>
-          </Link>
-        </CardBody>
-      </Card>
+        <ItemList />
     </CardGroup>
-        <CardGroup>
-        <Card
-          style = {{
-            display:"table",
-            width: "46%"
-          }}
-        >
-          <CardBody
-            style={{
-            display:"table-cell",
-            verticalAlign:"middle"
-            }}
-          >
-            <Link to='/workflow'>
-            <i className="fas fa-keyboard"
-                     style={{
-                      cursor: 'pointer',
-                      color: '#fff',
-                      fontSize: '2em'
-                     }}
-                  ><br />
-                  <span>Workflow</span>
-              </i>  
-            </Link>
-          </CardBody>
-        </Card>
-        <Card
-          style = {{
-            display:"table",
-            width: "46%"
-          }}
-        >
-          <CardBody
-            style={{
-            display:"table-cell",
-            verticalAlign:"middle"
-            }}
-          >
-            <Link to='/contacts'>
-            <CardTitle>
-              <i className="fas fa-address-book"
-                  style={{
-                  cursor: 'pointer',
-                  color: '#fff',
-                  fontSize: '2em'
-                  }}
-              ><br />
-              <span>Контакты</span>
-              </i> 
-            </CardTitle>
-            </Link>
-          </CardBody>
-        </Card>
-      </CardGroup>
-      </>
    );
 };
 
