@@ -5,56 +5,9 @@ import "./Home.scss";
 
 const Home = (props) => {
 
-    const items = [
-      "Резюме",
-      "Портфолио",
-      "Workflow",
-      "Контакты"
-    ];
     return (
 
     <>
-       <CardGroup>
-        <Card
-          style = {{
-            display:"table",
-            width: "46%"
-          }}
-        >
-          <CardBody
-            style={{
-            display:"table-cell",
-            verticalAlign:"middle"
-            }}
-          >
-          <Link to='/resume'>
-            <CardTitle>
-            <i className="fas fa-address-card"
-                     style={{
-                      cursor: 'pointer',
-                      color: '#fff',
-                      fontSize: '2em'
-                     }}
-                  ><br />
-                  <span>
-                  {items.map(
-                    item => 
-                      <div>{item}</div>
-                    )    
-                  }
-                  </span>
-              </i>  
-            </CardTitle>
-          </Link>          
-        </CardBody>
-      </Card>
-      </CardGroup>
-
-
-
-
-
-
     <CardGroup>
     <Card
           style = {{
@@ -70,7 +23,7 @@ const Home = (props) => {
           >
           <Link to='/resume'>
             <CardTitle>
-            <i className="fas fa-address-card"
+              <i className="fas fa-address-card"
                      style={{
                       cursor: 'pointer',
                       color: '#fff',

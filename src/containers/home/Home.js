@@ -1,60 +1,63 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { Card, CardTitle, CardGroup, CardBody } from 'reactstrap';
-import "./Home.scss";
 import items from './Homeprops';
-
+import './Home.scss';
 
 function Item({ item }) {
-    return (
-    <CardBody
-          style={{
-          display:"table-cell",
-          verticalAlign:"middle"
+  return (
+
+      <Card
+          style = {{
+            minWidth: "396px",
+            margin: "0 30px 0px 0"
           }}
-        >
-        <Link to='/{item.anchor}'>
-            <CardTitle>
-                <i className="fas fa-address-card"
-                        style={{
-                        cursor: 'pointer',
-                        color: '#fff',
-                        fontSize: '2em'
-                        }}
-                    ><br />
-                    <span>{item.heading}</span>
-                </i>  
-            </CardTitle>
-        </Link>     
-    </CardBody>
-    )
+      >
+          <CardBody
+              style={{
+                verticalAlign:"middle"
+              }}
+              >
+              <Link to={`/${item.anchor}`}>
+                  <CardTitle>
+                    <i className="fas fa-address-card"
+                            style={{
+                            cursor: 'pointer',
+                            color: '#fff',
+                            fontSize: '2em'
+                            }}
+                        ><br />
+                      <span>{item.heading}</span>
+                    </i>  
+                  </CardTitle>
+              </Link>     
+          </CardBody>
+      </Card>
+
+  )
 }
 
-class ItemList extends React.Component {
+class ItemList extends Component {
     render() {
         const articleElements = this.props.items.map(item => 
-        <Card
-            style = {{
-              display:"table",
-              width: "46%"
-            }}
-        >
-            <Item item = {item}/>
-        </Card>
+          <Item item = {item}/>
         )
         return (
-            {articleElements}   
+          <>
+            {articleElements}
+          </>   
         )
     }
 }
 
-
-const Home = (props) => {
+class Home extends React.Component {
+  render() {
     return (
-    <CardGroup>
-        <ItemList />
-    </CardGroup>
-   );
-};
+      <CardGroup>
+          <ItemList items = {items}/>
+      </CardGroup>
+    );
+  }
+}
 
 export default Home;

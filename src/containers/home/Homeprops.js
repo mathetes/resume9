@@ -1,7 +1,7 @@
 export default [
 	{
     id: '',
-    anchor: 'rezume',
+    anchor: 'resume',
 	heading: 'Резюме'
     },
     {
