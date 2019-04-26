@@ -6,34 +6,32 @@ import './Home.scss';
 
 function Item({ item }) {
   return (
-
-      <Card
-          style = {{
-            minWidth: "396px",
-            margin: "0 30px 0px 0"
+    <Card
+        style = {{
+          minWidth: "396px",
+          margin: "0 30px 0px 0"
+        }}
+    >
+      <CardBody
+          style={{
+            verticalAlign:"middle"
           }}
       >
-          <CardBody
-              style={{
-                verticalAlign:"middle"
-              }}
-              >
-              <Link to={`/${item.anchor}`}>
-                  <CardTitle>
-                    <i className="fas fa-address-card"
-                            style={{
-                            cursor: 'pointer',
-                            color: '#fff',
-                            fontSize: '2em'
-                            }}
-                        ><br />
-                      <span>{item.heading}</span>
-                    </i>  
-                  </CardTitle>
-              </Link>     
-          </CardBody>
-      </Card>
-
+        <Link to={`/${item.anchor}`}>
+            <CardTitle>
+              <i className="fas fa-address-card"
+                      style={{
+                      cursor: 'pointer',
+                      color: '#fff',
+                      fontSize: '2em'
+                      }}
+                  ><br />
+                <span>{item.heading}</span>
+              </i>  
+            </CardTitle>
+        </Link>     
+      </CardBody>
+    </Card>
   )
 }
 

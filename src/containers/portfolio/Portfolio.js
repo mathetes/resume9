@@ -1,36 +1,44 @@
 import React from 'react';
-import { Card, CardBody, Button, CardTitle, CardImg } from 'reactstrap';
+import { Card, CardBody, Button, CardTitle, CardGroup, CardImg } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import "./Portfolio.scss";
+import items from './Portfolioprops';
 
-const Portfolio = (props) => {
+const Item = (item) => {
   return (
-    <div>
       <Card className="card-block">
-        <CardImg top width="100%" src="http://lorempixel.com/400/200/sports/" alt="Card image cap" />
+        <CardImg top width="100%" src={`/${item.picture}`} alt="{item.imgalt}" />
         <CardBody>
-          <CardTitle>Резюме</CardTitle>
+          <CardTitle>{item.heading}</CardTitle>
           <Button className="card-button">
-          <Link to='/resume'>Смотреть</Link>
+          <Link to={`/${item.anchor}`}>Смотреть</Link>
           </Button>
         </CardBody>
       </Card>
-      <Card className="card-block">
-        <CardImg top width="100%" src="http://lorempixel.com/400/200/sports/" alt="Card image cap" />
-        <CardBody>
-          <CardTitle>Гостиница "Кристалл" http://cristall.online/</CardTitle>
-          <Button className="card-button">Смотреть</Button>
-        </CardBody>
-      </Card>
-      <Card className="card-block">
-        <CardImg top width="100%" src="http://lorempixel.com/400/200/sports/" alt="Card image cap" />
-        <CardBody>
-          <CardTitle>Школа Английского языка "Юнити"</CardTitle>
-          <Button className="card-button">Смотреть</Button>
-        </CardBody>
-      </Card>
-    </div>
-  );
-};
+  )
+}
+
+class ItemList extends React.Component {
+  render() {
+      const itemElements = this.props.items.map(item => 
+        <Item item = {item}/>
+      )
+      return (
+        <>
+          {itemElements}
+        </>   
+      )
+  }
+}
+
+class Portfolio extends React.Component {
+  render() {
+    return (
+      <CardGroup>
+          <ItemList items = {items}/>
+      </CardGroup>
+    );
+  }
+}
 
 export default Portfolio;
