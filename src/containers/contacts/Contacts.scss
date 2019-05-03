@@ -7,3 +7,29 @@
     color: #fff !important;
     margin-left: 2em;
 }
+
+.social-container {
+    background: #eee;
+    padding: 25px 50px;
+  }
+
+a.social {
+    margin: 0 1rem;
+    transition: transform 250ms;
+    display: inline-block;
+  }
+  
+  a.social:hover {
+    transform: translateY(-2px);
+  }
+  
+  a.facebook {
+    color: #4968ad;
+  }
+  
+  a.instagram {
+    color: #eb3223;
+  }
+  a.github {
+    color: black;
+  }

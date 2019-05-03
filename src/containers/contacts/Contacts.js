@@ -2,8 +2,15 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Card, CardTitle, CardGroup, CardText, Row, Col,
     CardBody } from 'reactstrap';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+    faGithub,
+    faFacebook,
+    faVk,
+    faInstagram
+    } from "@fortawesome/free-brands-svg-icons";
 
-import "./Contacts.scss";
+    import "./Contacts.scss";
 
 const Contacts = () => (
     <>
@@ -14,8 +21,45 @@ const Contacts = () => (
                 <CardGroup>
                     <Card>
                         <CardBody >
+                        <Row>
+                                <Col sm="6">
+                                    <Card body  className="card-info">
+                                        <CardTitle className="contact-title">Соц.сети</CardTitle>
+                                        <CardText  className="contact-link">
+                                        <div className="social-container">
+                                            <a
+                                                href="https://www.github.com/mathetes/"
+                                                className="github"
+                                            >
+                                                <FontAwesomeIcon icon={faGithub} size="2x" />
+                                            </a>
+                                            <a
+                                                href="https://www.vk.ru/ayapergenov/"
+                                                className="vk social"
+                                            >
+                                                <FontAwesomeIcon icon={faFacebook} size="2x" />
+                                            </a>
+
+                                            <a
+                                                href="https://www.facebook.com/ayapergenov/"
+                                                className="facebook social"
+                                            >
+                                                <FontAwesomeIcon icon={faVk} size="2x" />
+                                            </a>
+                                            <a
+                                                href="https://www.instagram.com/learnbuildteach"
+                                                className="instagram social"
+                                            >
+                                                <FontAwesomeIcon icon={faInstagram} size="2x" />
+                                            </a>
+                                        </div>
+                                        </CardText>
+                                    </Card>
+                                </Col>
+                            </Row><br />
+                            
                             <Row>
-                                <Col sm="12">
+                                <Col sm="6">
                                     <Card body className="card-info">
                                         <CardTitle className="contact-title">Телефон</CardTitle>
                                         <CardText>
@@ -36,32 +80,7 @@ const Contacts = () => (
                                     </Card>
                                 </Col>
                             </Row><br />
-                            <Row>
-                                <Col sm="12">
-                                    <Card body  className="card-info">
-                                        <CardTitle className="contact-title">Соц.сети</CardTitle>
-                                        <CardText  className="contact-link">
-                                        <div className="contact_box">                                            
-                                            <Link to="http://vk.com/ayapergenov"><i className="fa fa-vk icon"></i></Link>
-                                        </div>
-                                        <div className="contact_box">
-                                        <Link to="//webexcel.ru">
-                                            <div className="contacts_icon icon-basic-webpage-img-txt"></div>
-                                            <i className="fa fa-adress-card-0 faicon"></i>
-                                        </Link>
-                                        </div>
-                                        <div className="contact_box">
-                                            <i className="fa fa-skype faicon"></i>
-                                        </div>
-                                        <div className="contact_box">
-                                        <Link to="https://www.facebook.com/ayapergenov">
-                                            <i className="fa fa-facebook faicon"></i>
-                                        </Link>
-                                        </div>
-                                        </CardText>
-                                    </Card>
-                                </Col>
-                            </Row><br />
+                            
                             
                         </CardBody>
                     </Card>

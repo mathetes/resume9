@@ -8,7 +8,9 @@ function Item({ item }) {
   return (
     <Card>
         <CardBody >
+          <h2>
             <CardTitle>Место работы</CardTitle>
+          </h2>
             <Row>
                 <Col sm="12">
                     <Card body className="card-info">

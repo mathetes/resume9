@@ -6,13 +6,13 @@ import './Home.scss';
 
 function Item({ item }) {
   return (
-    <Card
+    <Card className="home-cards"
         style = {{
           minWidth: "396px",
-          margin: "0 30px 0px 0"
+          margin: "0 30px 30px 0"
         }}
     >
-      <CardBody
+      <CardBody className="home-cards-body"
           style={{
             verticalAlign:"middle"
           }}

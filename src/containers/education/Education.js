@@ -6,7 +6,9 @@ import { Card, CardTitle, CardGroup,
         <CardGroup>
             <Card>
                 <CardBody >
-                    <CardTitle>Образование</CardTitle>
+                    <h2>
+                        <CardTitle>Образование</CardTitle>
+                    </h2>
                     <Row>
                         <Col sm="12">
                             <Card body className="card-info">

@@ -12,15 +12,17 @@ const Resume = () => (
         <CardGroup>
             <Card>
                 <CardBody >
-                    <CardTitle>Навыки</CardTitle>
+                    <h2>
+                        <CardTitle>Навыки</CardTitle>
+                    </h2>
                     <div>
                         <ProgressAnim />
                     </div>   
                 </CardBody>
             </Card>
-        </CardGroup>
-        <Education />
+        </CardGroup>        
         <Jobs />
+        <Education />
         
     </>
   )

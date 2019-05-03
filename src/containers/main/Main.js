@@ -16,7 +16,7 @@ const Main =() => {
       return (
         <>
         <Header />
-        <main>
+        <main className="main-col">
           <Switch>
             <Route exact path='/' component={Home}/>
             <Route path='/resume' component={Resume}/>
