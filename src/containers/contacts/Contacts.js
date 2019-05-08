@@ -28,6 +28,12 @@ const Contacts = () => (
                                         <CardText  className="contact-link">
                                         <div className="social-container">
                                             <a
+                                                href="https://www.facebook.com/ayapergenov/"
+                                                className="facebook social"
+                                            >
+                                                <FontAwesomeIcon icon={faVk} size="2x" />
+                                            </a>
+                                            <a
                                                 href="https://www.github.com/mathetes/"
                                                 className="github"
                                             >
@@ -39,13 +45,6 @@ const Contacts = () => (
                                             >
                                                 <FontAwesomeIcon icon={faFacebook} size="2x" />
                                             </a>
-
-                                            <a
-                                                href="https://www.facebook.com/ayapergenov/"
-                                                className="facebook social"
-                                            >
-                                                <FontAwesomeIcon icon={faVk} size="2x" />
-                                            </a>
                                             <a
                                                 href="https://www.instagram.com/learnbuildteach"
                                                 className="instagram social"
@@ -56,9 +55,6 @@ const Contacts = () => (
                                         </CardText>
                                     </Card>
                                 </Col>
-                            </Row><br />
-                            
-                            <Row>
                                 <Col sm="6">
                                     <Card body className="card-info">
                                         <CardTitle className="contact-title">Телефон</CardTitle>
@@ -80,24 +76,9 @@ const Contacts = () => (
                                     </Card>
                                 </Col>
                             </Row><br />
-                            
-                            
                         </CardBody>
                     </Card>
-                </CardGroup>  
-                {/*<a className="btn-floating btn-lg btn-fb" type="button" role="button"><i className="fab fa-facebook-f"></i></a>
-                <a className="btn-floating btn-lg btn-li" type="button" role="button"><i className="fab fa-linkedin-in"></i></a>
-                <a className="btn-floating btn-lg btn-ins" type="button" role="button"><i className="fab fa-instagram"></i></a>
-                <a className="btn-floating btn-lg btn-vk" type="button" role="button"><i className="fab fa-vk"></i></a>
-                <a className="btn-floating btn-lg btn-git" type="button" role="button"><i className="fab fa-github"></i></a>
-                <a className="btn-floating btn-lg btn-email" type="button" role="button"><i className="fas fa-envelope"></i></a>*/}
-            </CardBody>
-            </Card>
-        </CardGroup>
-        <CardGroup>
-            <Card>
-            <CardBody >
-                <CardTitle>Форма контакта</CardTitle>   
+                </CardGroup>
             </CardBody>
             </Card>
         </CardGroup>

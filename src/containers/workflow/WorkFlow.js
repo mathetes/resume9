@@ -36,6 +36,11 @@ const WorkFlow = () => (
         
         Аккордион
             https://codesandbox.io/s/1qo7rylm14
+
+        Красивые карточки
+            https://codesandbox.io/s/6jlvz1j5q3
+        
+        
     </div>
   )
 

@@ -7,7 +7,7 @@ import items from './Portfolioprops';
 const Item = (item) => {
   return (
       <Card className="card-block">
-        <CardImg top width="100%" src={`/${item.picture}`} alt="{item.imgalt}" />
+        <CardImg top width="100%" src={item.picture} alt="{item.imgalt}" />
         <CardBody>
           <CardTitle>{item.heading}</CardTitle>
           <Button className="card-button">
