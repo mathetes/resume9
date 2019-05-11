@@ -8,13 +8,13 @@ function Item({ item }) {
   return (
     <Card>
         <CardBody >
-          <h2>
-            <CardTitle>Место работы</CardTitle>
-          </h2>
             <Row>
                 <Col sm="12">
                     <Card body className="card-info">
-                    <CardTitle>{item.company}</CardTitle>
+                    <h4>
+                      <CardTitle>{item.company}</CardTitle>
+                    </h4>
+                    <CardText>{item.period}</CardText>
                     <CardText>{item.position}</CardText>
                     </Card>
                 </Col>
@@ -26,13 +26,13 @@ function Item({ item }) {
 
 class ItemList extends Component {
     render() {
-        const itemElements = this.props.items.map(item => 
+        const itemElements = this.props.items.map(item =>
           <Item item = {item}/>
         )
         return (
           <>
             {itemElements}
-          </>   
+          </>
         )
     }
 }
@@ -40,9 +40,14 @@ class ItemList extends Component {
 class Home extends React.Component {
   render() {
     return (
-      <CardGroup>
-          <ItemList items = {items}/>
-      </CardGroup>
+      <>
+        <h2>
+          <CardTitle>Место работы</CardTitle>
+        </h2>
+        <CardGroup>
+            <ItemList items = {items}/>
+        </CardGroup>
+      </>
     );
   }
 }

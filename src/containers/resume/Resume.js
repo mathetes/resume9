@@ -17,13 +17,13 @@ const Resume = () => (
                     </h2>
                     <div>
                         <ProgressAnim />
-                    </div>   
+                    </div>
                 </CardBody>
             </Card>
-        </CardGroup>        
+        </CardGroup><br />        
         <Jobs />
         <Education />
-        
+
     </>
   )
 

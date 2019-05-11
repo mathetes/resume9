@@ -2,23 +2,22 @@ export default [
 	{
         id: '',
         heading: 'Резюме',
-        anchor: 'resume',
-        picture: 'http://lorempixel.com/400/200/sports/',
+        anchors: 'https://github.com/mathetes/resume9',
+        picture: 'http://localhost:3000/src/static/cristall.jpg',
         imgalt: 'Card image cap'
     },
     {
         id: '',
         heading: 'Гостиница Кристалл',
-        anchor: 'resume',
+        anchors: 'http://cristall.online/',
         picture: 'http://lorempixel.com/400/200/sports/',
         imgalt: 'Card image cap'
     },
     {
         id: '',
         heading: 'Школа Английского языка "Юнити"',
-        anchor: 'resume',
+        anchors: 'http://www.school-unity.ru/',
         picture: 'http://lorempixel.com/400/200/sports/',
         imgalt: 'Card image cap'
     }
-
  ]

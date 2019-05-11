@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { Card, CardTitle, CardGroup, CardText, Row, Col,
     CardBody } from 'reactstrap';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -27,7 +26,9 @@ const Contacts = () => (
                                         <CardTitle className="contact-title">Соц.сети</CardTitle>
                                         <CardText  className="contact-link">
                                         <div className="social-container">
-                                            <a
+                                            <a style={{
+                                                  marginRight: "16px"
+                                              }}
                                                 href="https://www.github.com/mathetes/"
                                                 className="github"
                                             >
@@ -37,14 +38,14 @@ const Contacts = () => (
                                                 href="https://www.vk.ru/ayapergenov/"
                                                 className="vk social"
                                             >
-                                                <FontAwesomeIcon icon={faFacebook} size="2x" />
+                                                <FontAwesomeIcon icon={faVk} size="2x" />
                                             </a>
 
                                             <a
                                                 href="https://www.facebook.com/ayapergenov/"
                                                 className="facebook social"
                                             >
-                                                <FontAwesomeIcon icon={faVk} size="2x" />
+                                                <FontAwesomeIcon icon={faFacebook} size="2x" />
                                             </a>
                                             <a
                                                 href="https://www.instagram.com/learnbuildteach"
@@ -56,20 +57,17 @@ const Contacts = () => (
                                         </CardText>
                                     </Card>
                                 </Col>
-                            </Row><br />
-                            
-                            <Row>
                                 <Col sm="6">
                                     <Card body className="card-info">
                                         <CardTitle className="contact-title">Телефон</CardTitle>
                                         <CardText>
-                                            <Link className="contact-link" to="tel:+7-923-157-70-52"> +7-923-157-70-52 </Link> <br />
-                                            <Link className="contact-link" to="whatsapp://send?text=Hello&phone=+7-953-888-50-98&abid=+7-953-888-50-98">+7-953-888-50-98 (WhatsApp)</Link><br />
-                                            <Link className="contact-link" to="callto://+7-923-157-70-52?call"> Skype</Link>
+                                            <a className="contact-link" href="tel:+7-923-157-70-52"> +7-923-157-70-52 </a> <br />
+                                            <a className="contact-link" href="whatsapp://send?text=Hello&phone=+7-953-888-50-98&abid=+7-953-888-50-98">+7-953-888-50-98 (WhatsApp)</a><br />
+                                            <a className="contact-link" href="callto://nskhelper?call"> Skype</a>
                                         </CardText>
                                         <CardTitle className="contact-title">Email</CardTitle>
                                         <CardText>
-                                            <Link className="contact-link" to="mailto:nsk.roman@gmail.com">nsk.roman@gmail.com</Link>
+                                            <a className="contact-link" href="mailto:nsk.roman@gmail.com">nsk.roman@gmail.com</a>
                                         </CardText>
                                         <CardTitle className="contact-title">Адрес</CardTitle>
                                         <CardText>
@@ -80,27 +78,13 @@ const Contacts = () => (
                                     </Card>
                                 </Col>
                             </Row><br />
-                            
-                            
                         </CardBody>
                     </Card>
-                </CardGroup>  
-                {/*<a className="btn-floating btn-lg btn-fb" type="button" role="button"><i className="fab fa-facebook-f"></i></a>
-                <a className="btn-floating btn-lg btn-li" type="button" role="button"><i className="fab fa-linkedin-in"></i></a>
-                <a className="btn-floating btn-lg btn-ins" type="button" role="button"><i className="fab fa-instagram"></i></a>
-                <a className="btn-floating btn-lg btn-vk" type="button" role="button"><i className="fab fa-vk"></i></a>
-                <a className="btn-floating btn-lg btn-git" type="button" role="button"><i className="fab fa-github"></i></a>
-                <a className="btn-floating btn-lg btn-email" type="button" role="button"><i className="fas fa-envelope"></i></a>*/}
+                </CardGroup>
             </CardBody>
             </Card>
         </CardGroup>
-        <CardGroup>
-            <Card>
-            <CardBody >
-                <CardTitle>Форма контакта</CardTitle>   
-            </CardBody>
-            </Card>
-        </CardGroup>
+
     </>
   )
 
