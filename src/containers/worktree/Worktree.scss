@@ -1,0 +1,20 @@
+.fa {
+  font-size: 18px;
+  padding: 2px 4px;
+}
+ul {
+  list-style: none;
+  padding: 6px 20px;
+  text-align: left;
+}
+ul li.open > .fa:before {
+  content: "\f0d7";
+}
+ul li.close > .fa:before {
+  content: "\f0da";
+  text-align: left;
+}
+ul li.close ul {
+  display: none;
+  text-align: left;
+}

@@ -4,7 +4,7 @@ import { Card, CardTitle, CardGroup, CardBody } from 'reactstrap';
 import items from './Homeprops';
 import './Home.scss';
 
-function Item({ item }) {
+const Item = ({item}) =>  {
   return (
     <Card className="home-cards"
         style = {{
@@ -27,9 +27,9 @@ function Item({ item }) {
                       }}
                   ><br />
                 <span>{item.heading}</span>
-              </i>  
+              </i>
             </CardTitle>
-        </Link>     
+        </Link>
       </CardBody>
     </Card>
   )
@@ -37,13 +37,13 @@ function Item({ item }) {
 
 class ItemList extends Component {
     render() {
-        const articleElements = this.props.items.map(item => 
+        const articleElements = this.props.items.map(item =>
           <Item item = {item}/>
         )
         return (
           <>
             {articleElements}
-          </>   
+          </>
         )
     }
 }

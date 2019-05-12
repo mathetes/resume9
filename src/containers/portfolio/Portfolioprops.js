@@ -9,7 +9,7 @@ export default [
     {
         id: '',
         heading: 'Гостиница Кристалл',
-        anchors: 'http://cristall.online/',
+        anchors: 'http://www.cristall.online/',
         picture: 'http://lorempixel.com/400/200/sports/',
         imgalt: 'Card image cap'
     },

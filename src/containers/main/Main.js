@@ -6,27 +6,21 @@ import Resume from '../resume/Resume';
 import Portfolio from '../portfolio/Portfolio';
 import WorkFLow from '../workflow/WorkFlow';
 import Contacts from '../contacts/Contacts';
-
 import "./Main.scss";
-
-
-
 
 const Main =() => {
       return (
         <>
-        <Header />
-        <main className="main-col">
-          <Switch>
-            <Route exact path='/' component={Home}/>
-            <Route path='/resume' component={Resume}/>
-            <Route path='/portfolio' component={Portfolio}/
-            >
-            <Route path='/workflow' component={WorkFLow}/
-            >
-            <Route path='/contacts' component={Contacts}/>
-          </Switch>
-        </main>
+          <Header />
+          <main className="main-col">
+            <Switch>
+              <Route exact path='/' component={Home}/>
+              <Route path='/resume' component={Resume}/>
+              <Route path='/portfolio' component={Portfolio}/>
+              <Route path='/workflow' component={WorkFLow}/>
+              <Route path='/contacts' component={Contacts}/>
+            </Switch>
+          </main>
         </>
     );
 }

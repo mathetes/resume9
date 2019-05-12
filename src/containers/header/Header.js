@@ -2,8 +2,6 @@ import React from 'react';
 import './Header.scss';
 import { Link } from 'react-router-dom';
 
-
-
 const Header = (props) => {
     const {
         name,
@@ -18,7 +16,7 @@ const Header = (props) => {
         </Link>
     </div>);
   }
-  
+
 
   Header.defaultProps = {
     name: "Роман Аяпергенов",
@@ -26,4 +24,3 @@ const Header = (props) => {
     };
 
 export default Header;
-  
