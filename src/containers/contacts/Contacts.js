@@ -26,9 +26,13 @@ const Contacts = () => (
                                         <CardTitle className="contact-title">Соц.сети</CardTitle>
                                         <CardText  className="contact-link">
                                         <div className="social-container">
-                                            <a style={{
-                                                  marginRight: "16px"
-                                              }}
+                                            <a
+                                                href="https://www.facebook.com/ayapergenov/"
+                                                className="facebook social"
+                                            >
+                                                <FontAwesomeIcon icon={faVk} size="2x" />
+                                            </a>
+                                            <a
                                                 href="https://www.github.com/mathetes/"
                                                 className="github"
                                             >
@@ -39,13 +43,6 @@ const Contacts = () => (
                                                 className="vk social"
                                             >
                                                 <FontAwesomeIcon icon={faVk} size="2x" />
-                                            </a>
-
-                                            <a
-                                                href="https://www.facebook.com/ayapergenov/"
-                                                className="facebook social"
-                                            >
-                                                <FontAwesomeIcon icon={faFacebook} size="2x" />
                                             </a>
                                             <a
                                                 href="https://www.instagram.com/learnbuildteach"

@@ -36,4 +36,17 @@ const Workflow = () => (
 )
 
 
-export default Workflow;
+        Перемещение блоков мышкой
+            https://codesandbox.io/s/6n20nrzlxz
+
+        Аккордион
+            https://codesandbox.io/s/1qo7rylm14
+
+        Красивые карточки
+            https://codesandbox.io/s/6jlvz1j5q3
+
+
+    </div>
+  )
+
+export default WorkFlow;
