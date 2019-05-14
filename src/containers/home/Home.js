@@ -4,31 +4,31 @@ import { Card, CardTitle, CardGroup, CardBody } from 'reactstrap';
 import items from './Homeprops';
 import './Home.scss';
 
-const Item = ({item}) =>  {
+const Item = ({ item }) => {
   return (
     <Card className="home-cards"
-        style = {{
-          minWidth: "396px",
-          margin: "0 30px 30px 0"
-        }}
+      style={{
+        minWidth: "396px",
+        margin: "0 30px 30px 0"
+      }}
     >
       <CardBody className="home-cards-body"
-          style={{
-            verticalAlign:"middle"
-          }}
+        style={{
+          verticalAlign: "middle"
+        }}
       >
         <Link to={`/${item.anchor}`}>
-            <CardTitle>
-              <i className="fas fa-address-card"
-                      style={{
-                      cursor: 'pointer',
-                      color: '#fff',
-                      fontSize: '2em'
-                      }}
-                  ><br />
-                <span>{item.heading}</span>
-              </i>
-            </CardTitle>
+          <CardTitle>
+            <i className="fas fa-address-card"
+              style={{
+                cursor: 'pointer',
+                color: '#fff',
+                fontSize: '2em'
+              }}
+            ><br />
+              <span>{item.heading}</span>
+            </i>
+          </CardTitle>
         </Link>
       </CardBody>
     </Card>
@@ -36,23 +36,23 @@ const Item = ({item}) =>  {
 }
 
 class ItemList extends Component {
-    render() {
-        const articleElements = this.props.items.map(item =>
-          <Item item = {item}/>
-        )
-        return (
-          <>
-            {articleElements}
-          </>
-        )
-    }
+  render() {
+    const articleElements = this.props.items.map(item =>
+      <Item item={item} />
+    )
+    return (
+      <>
+        {articleElements}
+      </>
+    )
+  }
 }
 
 class Home extends React.Component {
   render() {
     return (
       <CardGroup>
-          <ItemList items = {items}/>
+        <ItemList items={items} />
       </CardGroup>
     );
   }

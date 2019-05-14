@@ -9,15 +9,15 @@ class App extends Component {
     return (
       <div className="App">
         <Container fluid className="App-wrapper">
-        <Row>
-          <Col xs="8">
-            <Main />
-          </Col>
-          <Col xs="4">
-            <Sidebar />
-          </Col>
-        </Row>        
-      </Container>
+          <Row>
+            <Col xs="8">
+              <Main />
+            </Col>
+            <Col xs="4">
+              <Sidebar />
+            </Col>
+          </Row>
+        </Container>
       </div>
     );
   }

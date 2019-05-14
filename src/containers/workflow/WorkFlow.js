@@ -1,6 +1,6 @@
-import React from 'react';
-import './WorkFlow.scss';
-import Worktree from '../worktree/Worktree';
+import React from "react";
+import "./WorkFlow.scss";
+import Worktree from "../worktree/Worktree";
 
 let workflow = {
   label: "Workflow создания проекта",
@@ -38,12 +38,10 @@ let workflow = {
           label: "Sub Node3"
         }
       ]
-    },
+    }
   ]
 };
 
-const WorkFlow = () => (
-    <Worktree node={workflow} />
-)
+const WorkFlow = () => <Worktree node={workflow} />;
 
 export default WorkFlow;
