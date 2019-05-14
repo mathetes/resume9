@@ -2,12 +2,12 @@ import React from 'react';
 import './WorkFlow.scss';
 import Worktree from '../worktree/Worktree';
 
-let root = {
-  label: "Root",
+let workflow = {
+  label: "Workflow создания проекта",
   state: "open",
   children: [
     {
-      label: "Node1",
+      label: "Выбор дизайна сайта",
       children: [
         {
           label: "Sub Node1"
@@ -18,7 +18,7 @@ let root = {
       ]
     },
     {
-      label: "Node2",
+      label: "Определение основных блоков",
       children: [
         {
           label: "Sub Node3"
@@ -27,26 +27,23 @@ let root = {
           label: "Sub Node4"
         }
       ]
-    }
+    },
+    {
+      label: "Верстка статичной версии",
+      children: [
+        {
+          label: "Sub Node3"
+        },
+        {
+          label: "Sub Node3"
+        }
+      ]
+    },
   ]
 };
 
-const Workflow = () => (
-    <Worktree node={root} />
+const WorkFlow = () => (
+    <Worktree node={workflow} />
 )
-
-
-        Перемещение блоков мышкой
-            https://codesandbox.io/s/6n20nrzlxz
-
-        Аккордион
-            https://codesandbox.io/s/1qo7rylm14
-
-        Красивые карточки
-            https://codesandbox.io/s/6jlvz1j5q3
-
-
-    </div>
-  )
 
 export default WorkFlow;

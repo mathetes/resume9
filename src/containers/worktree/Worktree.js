@@ -9,13 +9,13 @@ class TreeNode extends React.Component{
 
   toggle(){
     let newState = Object.assign({}, this.state);
-    newState.state = this.state.state === 'open' ? 'close' : 'open';
+    newState.state = this.state.state === 'opener' ? 'closer' : 'opener';
     this.setState(newState);
   }
 
   getClazz(node){
     if(node && node.children && node.children.length > 0){
-      return node.state === 'open' ? 'open' : 'close';
+      return node.state === 'opener' ? 'opener' : 'closer';
     }
   }
 

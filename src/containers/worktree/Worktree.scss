@@ -2,19 +2,30 @@
   font-size: 18px;
   padding: 2px 4px;
 }
-ul {
+.worktree {
   list-style: none;
   padding: 6px 20px;
   text-align: left;
 }
-ul li.open > .fa:before {
+
+.closer {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+}
+.closer:hover {
+  color: #fff;
+}
+
+.worktree > .opener > .fa:before {
   content: "\f0d7";
 }
-ul li.close > .fa:before {
+.worktree >.closer > .fa:before {
   content: "\f0da";
   text-align: left;
 }
-ul li.close ul {
+.worktree >.closer ul {
   display: none;
   text-align: left;
 }
