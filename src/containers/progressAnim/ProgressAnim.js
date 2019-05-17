@@ -8,17 +8,13 @@ const ProgressAnim = props => {
         HTML - 90%
       </Progress>
       <br />
-      <Progress animated color="success" value="75">
+      <Progress animated color="success" value={75}>
         CSS - 75%
       </Progress>
       <br />
       <Progress animated color="info" value={60}>
         Javascript -60%
       </Progress>
-      <br />
-      <Progress animated color="warning" value={75} />
-      <br />
-      <Progress animated color="danger" value="100" />
     </div>
   );
 };

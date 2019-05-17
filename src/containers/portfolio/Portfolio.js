@@ -13,10 +13,13 @@ import resume9 from "../../static/resume9.jpg";
 import cristall from "../../static/cristall.jpg";
 import unity from "../../static/unity.jpg";
 
+//Как объединить изображения в массив?
+// Как поочередно передавать изображения из массива?
+
 const Item = ({ item }) => {
   return (
     <Card className="card-block">
-      <CardImg width="100%" src={cristall} alt={item.imgalt} />
+      <CardImg width="100%" src={unity} alt={item.imgalt} />
       <CardBody>
         <CardTitle>{item.heading}</CardTitle>
         <a href={item.anchors}>

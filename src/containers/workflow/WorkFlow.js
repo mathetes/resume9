@@ -10,10 +10,7 @@ let workflow = {
       label: "Выбор дизайна сайта",
       children: [
         {
-          label: "Sub Node1"
-        },
-        {
-          label: "Sub Node1"
+          label: "В качестве образца взят шаблон сайта 2019 года - Metronal"
         }
       ]
     },
@@ -21,10 +18,13 @@ let workflow = {
       label: "Определение основных блоков",
       children: [
         {
-          label: "Sub Node3"
+          label: "Шапка с именем и должностью"
         },
         {
-          label: "Sub Node4"
+          label: "Sidebar c аватаркой"
+        },
+        {
+          label: "Блок основного контента"
         }
       ]
     },
@@ -32,10 +32,32 @@ let workflow = {
       label: "Верстка статичной версии",
       children: [
         {
-          label: "Sub Node3"
+          label: "Подход Desktop-first"
         },
         {
-          label: "Sub Node3"
+          label: "Для верстки использована css библиотека reactstrap"
+        }
+      ]
+    },
+    {
+      label: "State в динамичных данных",
+      children: [
+        {
+          label: "Sub Node4"
+        },
+        {
+          label: "Sub Node4"
+        }
+      ]
+    },
+    {
+      label: "Загрузка на сервер",
+      children: [
+        {
+          label: "frontend.webexcel.ru"
+        },
+        {
+          label: "Рассылка работодателям"
         }
       ]
     }
