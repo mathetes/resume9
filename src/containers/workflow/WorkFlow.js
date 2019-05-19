@@ -40,24 +40,13 @@ let workflow = {
       ]
     },
     {
-      label: "State в динамичных данных",
-      children: [
-        {
-          label: "Sub Node4"
-        },
-        {
-          label: "Sub Node4"
-        }
-      ]
+      label: "State в динамичных данных"
     },
     {
       label: "Загрузка на сервер",
       children: [
         {
           label: "frontend.webexcel.ru"
-        },
-        {
-          label: "Рассылка работодателям"
         }
       ]
     }
