@@ -49,6 +49,25 @@ let workflow = {
           label: "frontend.webexcel.ru"
         }
       ]
+    },
+    {
+      label: "Доработки",
+      children: [
+        {
+          label: "Подключение EsLint"
+        },
+        {
+          label: "Добавление key в списки"
+        }
+      ]
+    },
+    {
+      label: "Подключение Redux",
+      children: [
+        {
+          label: "Приложение с использованием Redux"
+        }
+      ]
     }
   ]
 };

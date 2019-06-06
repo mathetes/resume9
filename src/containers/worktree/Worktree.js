@@ -36,9 +36,6 @@ class TreeNode extends React.Component {
 }
 
 class Worktree extends React.Component {
-  constructor(props) {
-    super(props);
-  }
 
   render() {
     return (

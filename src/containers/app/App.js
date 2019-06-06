@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import "./App.scss";
 import { Container, Row, Col } from "reactstrap";
-import Main from "./containers/main/Main";
-import Sidebar from "./containers/sidebar/Sidebar";
+import Main from "../main/Main";
+import Sidebar from "../sidebar/Sidebar";
 
 class App extends Component {
   render() {
