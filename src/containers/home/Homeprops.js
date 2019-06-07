@@ -1,22 +1,22 @@
 export default [
-	{
-    id: '',
+  {
+    id: 1,
     anchor: 'resume',
-	heading: 'Резюме'
-    },
-    {
-    id: '',
+    heading: 'Резюме',
+  },
+  {
+    id: 2,
     anchor: 'portfolio',
-	heading: 'Портфолио'
-    },
-    {
-    id: '',
+    heading: 'Портфолио',
+  },
+  {
+    id: 3,
     anchor: 'workflow',
-	heading: 'Workflow'
-    },
-    {
-    id: '',
+    heading: 'Workflow',
+  },
+  {
+    id: 4,
     anchor: 'contacts',
-	heading: 'Контакты'
-	}
- ]
+    heading: 'Контакты',
+  },
+];

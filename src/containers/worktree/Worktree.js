@@ -1,26 +1,26 @@
-import React from "react";
-import "./Worktree.scss";
+import React, { Component } from 'react';
+import './Worktree.scss';
 
-class TreeNode extends React.Component {
+class TreeNode extends Component {
   constructor(props) {
     super(props);
     this.state = props.node;
   }
 
-  toggle() {
-    let newState = Object.assign({}, this.state);
-    newState.state = this.state.state === "opener" ? "closer" : "opener";
-    this.setState(newState);
-  }
-
   getClazz(node) {
     if (node && node.children && node.children.length > 0) {
-      return node.state === "opener" ? "opener" : "closer";
+      return node.state === 'opener' ? 'opener' : 'closer';
     }
   }
 
+  toggle() {
+    const newState = Object.assign({}, this.state);
+    newState.state = this.state.state === 'opener' ? 'closer' : 'opener';
+    this.setState(newState);
+  }
+
   render() {
-    let nodes = this.state.children || [];
+    const nodes = this.state.children || [];
     let children = nodes.map((n, idx) => <TreeNode node={n} key={idx} />);
     if (children.length > 0) {
       children = <ul className="worktree">{children}</ul>;
@@ -36,7 +36,6 @@ class TreeNode extends React.Component {
 }
 
 class Worktree extends React.Component {
-
   render() {
     return (
       <ul className="worktree">

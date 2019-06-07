@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {
   Card, CardTitle, CardGroup,
-  CardBody, CardText, Row, Col
+  CardBody, CardText, Row, Col,
 } from 'reactstrap';
 import items from './Jobsprops';
 import './Jobs.scss';
@@ -9,7 +9,7 @@ import './Jobs.scss';
 function Item({ item }) {
   return (
     <Card>
-      <CardBody >
+      <CardBody>
         <Row>
           <Col sm="12">
             <Card body className="card-info">
@@ -20,22 +20,26 @@ function Item({ item }) {
               <CardText>{item.position}</CardText>
             </Card>
           </Col>
-        </Row><br />
+        </Row>
+        <br />
       </CardBody>
     </Card>
-  )
+  );
 }
 
 class ItemList extends Component {
   render() {
-    const itemElements = this.props.items.map(item =>
-      <Item item={item} />
-    )
+    const itemElements = this.props.items.map(item => (
+      <Item
+        item={item}
+        key={item.id}
+      />
+    ));
     return (
       <>
         {itemElements}
       </>
-    )
+    );
   }
 }
 
