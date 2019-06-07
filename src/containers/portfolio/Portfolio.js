@@ -34,7 +34,7 @@ class ItemList extends React.Component {
     ));
     return <>{itemElements}</>;
   }
-}
+};
 
 const Portfolio = () => (
   <CardGroup>
