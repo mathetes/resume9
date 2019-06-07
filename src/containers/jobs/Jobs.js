@@ -43,19 +43,15 @@ class ItemList extends Component {
   }
 }
 
-class Home extends React.Component {
-  render() {
-    return (
-      <>
-        <h2>
-          <CardTitle>Место работы</CardTitle>
-        </h2>
-        <CardGroup>
-          <ItemList items={items} />
-        </CardGroup>
-      </>
-    );
-  }
-}
+const Home = () => (
+  <>
+    <h2>
+      <CardTitle>Место работы</CardTitle>
+    </h2>
+    <CardGroup>
+      <ItemList items={items} />
+    </CardGroup>
+  </>
+);
 
 export default Home;

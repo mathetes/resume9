@@ -55,14 +55,10 @@ class ItemList extends Component {
   }
 }
 
-class Home extends Component {
-  render() {
-    return (
-      <CardGroup>
-        <ItemList items={items} />
-      </CardGroup>
-    );
-  }
-}
+const Home = () => (
+  <CardGroup>
+    <ItemList items={items} />
+  </CardGroup>
+);
 
 export default Home;

@@ -36,14 +36,10 @@ class ItemList extends React.Component {
   }
 }
 
-class Portfolio extends React.Component {
-  render() {
-    return (
-      <CardGroup>
-        <ItemList items={items} />
-      </CardGroup>
-    );
-  }
-}
+const Portfolio = () => (
+  <CardGroup>
+    <ItemList items={items} />
+  </CardGroup>
+);
 
 export default Portfolio;

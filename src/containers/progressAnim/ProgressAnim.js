@@ -1,7 +1,7 @@
 import React from 'react';
 import { Progress } from 'reactstrap';
 
-const ProgressAnim = props => (
+const ProgressAnim = () => (
   <div>
     <Progress animated value={90}>
         HTML - 90%
