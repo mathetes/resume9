@@ -19,4 +19,14 @@ export default [
     anchor: 'contacts',
     heading: 'Контакты',
   },
+  {
+    id: 5,
+    anchor: 'technology',
+    heading: 'Технологии',
+  },
+  {
+    id: 6,
+    anchor: 'plans',
+    heading: 'Планы',
+  },
 ];

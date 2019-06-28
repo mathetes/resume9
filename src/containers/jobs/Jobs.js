@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
+import PropTypes from 'prop-types';
 import {
-  Card, CardTitle, CardGroup,
-  CardBody, CardText, Row, Col,
+  Card, CardTitle, CardGroup, CardBody, CardText, Row, Col,
 } from 'reactstrap';
 import items from './Jobsprops';
 import './Jobs.scss';
@@ -27,19 +27,10 @@ function Item({ item }) {
   );
 }
 
-class ItemList extends Component {
+class ItemList extends PureComponent {
   render() {
-    const itemElements = this.props.items.map(item => (
-      <Item
-        item={item}
-        key={item.id}
-      />
-    ));
-    return (
-      <>
-        {itemElements}
-      </>
-    );
+    const itemElements = this.props.items.map(item => <Item item={item} key={item.id} />);
+    return <>{itemElements}</>;
   }
 }
 
@@ -53,5 +44,13 @@ const Home = () => (
     </CardGroup>
   </>
 );
+
+Item.propTypes = {
+  item: PropTypes.string.isRequired,
+};
+
+ItemList.propTypes = {
+  items: PropTypes.string.isRequired,
+};
 
 export default Home;
